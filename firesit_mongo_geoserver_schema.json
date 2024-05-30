@@ -1,0 +1,676 @@
+{
+    "typeName": "current_year_fire",
+    "userData": {
+      "collection": "current_year_fire"
+    },
+    "geometryDescriptor": {
+      "localName": "geometry",
+      "crs": {
+        "type": "name",
+        "properties": {
+          "name": "urn:ogc:def:crs:EPSG:4326"
+        }
+      }
+    },
+    "attributeDescriptors": [
+      {
+        "localName": "number",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "number"
+        }
+      },
+      {
+        "localName": "id",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "id"
+        }
+      },
+      {
+        "localName": "_id",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "org.bson.types.ObjectId"
+        },
+        "userData": {
+          "mapping": "_id"
+        }
+      },
+      {
+        "localName": "geometry",
+        "type": {
+          "binding": "org.locationtech.jts.geom.Geometry"
+        },
+        "userData": {
+          "encoding": "GeoJSON",
+          "mapping": "geometry"
+        }
+      },
+      {
+        "localName": "longitudeDD",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.Double"
+        },
+        "userData": {
+          "mapping": "longitudeDD"
+        }
+      },
+      {
+        "localName": "longitude",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "longitude"
+        }
+      },
+      {
+        "localName": "latitudeDD",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.Double"
+        },
+        "userData": {
+          "mapping": "latitudeDD"
+        }
+      },
+      {
+        "localName": "latitude",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "latitude"
+        }
+      },
+      {
+        "localName": "cause",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "cause"
+        }
+      },
+      {
+        "localName": "subCause",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "subCause"
+        }
+      },
+      {
+        "localName": "responseCategoryId",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "responseCategoryId"
+        }
+      },
+      {
+        "localName": "wildfireStatus",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "wildfireStatus"
+        }
+      },
+      {
+        "localName": "previousNumbers",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "previousNumbers"
+        }
+      },
+      {
+        "localName": "discoveryDateObj",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.util.Date"
+        },
+        "userData": {
+          "mapping": "discoveryDateObj"
+        }
+      },
+      {
+        "localName": "discoveryDate",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "discoveryDate"
+        }
+      },
+      {
+        "localName": "discoveryTime",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "discoveryTime"
+        }
+      },
+      {
+        "localName": "discoverySize",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.Double"
+        },
+        "userData": {
+          "mapping": "discoverySize"
+        }
+      },
+      {
+        "localName": "discoveryAgent",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "discoveryAgent"
+        }
+      },
+      {
+        "localName": "estimatedStartDateObj",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.util.Date"
+        },
+        "userData": {
+          "mapping": "estimatedStartDateObj"
+        }
+      },
+      {
+        "localName": "estimatedStartTime",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "estimatedStartTime"
+        }
+      },
+      {
+        "localName": "estimatedStartDate",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "estimatedStartDate"
+        }
+      },
+      {
+        "localName": "estimatedSize",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.Integer"
+        },
+        "userData": {
+          "mapping": "estimatedSize"
+        }
+      },
+      {
+        "localName": "reportedDateObj",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.util.Date"
+        },
+        "userData": {
+          "mapping": "reportedDateObj"
+        }
+      },
+      {
+        "localName": "reportedDate",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "reportedDate"
+        }
+      },
+      {
+        "localName": "reportedSize",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.Double"
+        },
+        "userData": {
+          "mapping": "reportedSize"
+        }
+      },
+      {
+        "localName": "actionDate",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "actionDate"
+        }
+      },
+      {
+        "localName": "actionTime",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "actionTime"
+        }
+      },
+      {
+        "localName": "actionSize",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.Double"
+        },
+        "userData": {
+          "mapping": "actionSize"
+        }
+      },
+      {
+        "localName": "controlledDate",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "controlledDate"
+        }
+      },
+      {
+        "localName": "controlledTime",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "controlledTime"
+        }
+      },
+      {
+        "localName": "controlledSize",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.Integer"
+        },
+        "userData": {
+          "mapping": "controlledSize"
+        }
+      },
+      {
+        "localName": "lastMonitoredDateObj",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.util.Date"
+        },
+        "userData": {
+          "mapping": "lastMonitoredDateObj"
+        }
+      },
+      {
+        "localName": "lastMonitoredTime",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "lastMonitoredTime"
+        }
+      },
+      {
+        "localName": "lastMonitoredDate",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "lastMonitoredDate"
+        }
+      },
+      {
+        "localName": "initialAttackSuccess",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.Boolean"
+        },
+        "userData": {
+          "mapping": "initialAttackSuccess"
+        }
+      },
+      {
+        "localName": "varComments",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "varComments"
+        }
+      },
+      {
+        "localName": "createdInHistoricalContext",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.Boolean"
+        },
+        "userData": {
+          "mapping": "createdInHistoricalContext"
+        }
+      },
+      {
+        "localName": "fireLevel",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "fireLevel"
+        }
+      },
+      {
+        "localName": "fromPastFireSeason",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.Boolean"
+        },
+        "userData": {
+          "mapping": "fromPastFireSeason"
+        }
+      },
+      {
+        "localName": "isPreFire",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.Boolean"
+        },
+        "userData": {
+          "mapping": "isPreFire"
+        }
+      },
+      {
+        "localName": "lastTouch.userName",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "lastTouch.userName"
+        }
+      },
+      {
+        "localName": "lastTouch.touchDateTime",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "lastTouch.touchDateTime"
+        }
+      },
+      {
+        "localName": "currentPerimeter.uploadedOn",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.util.Date"
+        },
+        "userData": {
+          "mapping": "currentPerimeter.uploadedOn"
+        }
+      },
+      {
+        "localName": "currentPerimeter.uploadedBy",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "currentPerimeter.uploadedBy"
+        }
+      },
+      {
+        "localName": "objective.region.name",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "objective.region.name"
+        }
+      },
+      {
+        "localName": "objective.region.code",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "objective.region.code"
+        }
+      },
+      {
+        "localName": "objective.status",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.Integer"
+        },
+        "userData": {
+          "mapping": "objective.status"
+        }
+      },
+      {
+        "localName": "objective.startDateObj",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.util.Date"
+        },
+        "userData": {
+          "mapping": "objective.startDateObj"
+        }
+      },
+      {
+        "localName": "objective.id",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "objective.id"
+        }
+      },
+      {
+        "localName": "objective.type",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "objective.type"
+        }
+      },
+      {
+        "localName": "objective.region.shortName",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "objective.region.shortName"
+        }
+      },
+      {
+        "localName": "objective.startDate",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "objective.startDate"
+        }
+      },
+      {
+        "localName": "objective.region.active",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.Boolean"
+        },
+        "userData": {
+          "mapping": "objective.region.active"
+        }
+      },
+      {
+        "localName": "objective.region.depth",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.Integer"
+        },
+        "userData": {
+          "mapping": "objective.region.depth"
+        }
+      },
+      {
+        "localName": "objective.requestNumber",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.Integer"
+        },
+        "userData": {
+          "mapping": "objective.requestNumber"
+        }
+      },
+      {
+        "localName": "objective.region.type",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.Integer"
+        },
+        "userData": {
+          "mapping": "objective.region.type"
+        }
+      },
+      {
+        "localName": "objective.yearRequested",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.Integer"
+        },
+        "userData": {
+          "mapping": "objective.yearRequested"
+        }
+      },
+      {
+        "localName": "objective.closed",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.Boolean"
+        },
+        "userData": {
+          "mapping": "objective.closed"
+        }
+      },
+      {
+        "localName": "objective.previousNumbers",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "objective.previousNumbers"
+        }
+      },
+      {
+        "localName": "postComment",
+        "minOccurs": 0,
+        "maxOccurs": 1,
+        "type": {
+          "binding": "java.lang.String"
+        },
+        "userData": {
+          "mapping": "postComment"
+        }
+      }
+    ]
+  }
